@@ -125,11 +125,10 @@
 
             </Frame>
 
-            <!--<WebView 
-                     Source="https://en.wikipedia.org/wiki/Mexico"/>-->
+            <WebView 
+                     Source="https://en.wikipedia.org/wiki/Mexico"/>
 
-            <WebView Source="https://learn.microsoft.com/xamarin/"
-         VerticalOptions="FillAndExpand" />
+            <WebView Source="https://learn.microsoft.com/xamarin/"/>
 
             <TableView Intent="Settings">
                 <TableRoot>
