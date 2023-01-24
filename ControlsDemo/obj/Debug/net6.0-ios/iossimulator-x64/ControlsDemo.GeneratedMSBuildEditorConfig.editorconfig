@@ -28,6 +28,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.CommandsContr
 build_metadata.AdditionalFiles.TargetPath = CommandsControlsDemo.xaml
 build_metadata.AdditionalFiles.RelativePath = CommandsControlsDemo.xaml
 
+[C:/Users/EQUIPO-2/source/repos/ControlsDemo/ControlsDemo/ImputControlsDemo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.ImputControlsDemo.xaml
+build_metadata.AdditionalFiles.TargetPath = ImputControlsDemo.xaml
+build_metadata.AdditionalFiles.RelativePath = ImputControlsDemo.xaml
+
 [C:/Users/EQUIPO-2/source/repos/ControlsDemo/ControlsDemo/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ControlsDemo.MainPage.xaml

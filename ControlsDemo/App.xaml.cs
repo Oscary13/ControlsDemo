@@ -6,6 +6,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new CommandsControlsDemo();
+		MainPage = new ImputControlsDemo();
 	}
 }

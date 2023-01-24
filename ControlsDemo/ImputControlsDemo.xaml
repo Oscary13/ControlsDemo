@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.ImputControlsDemo"
+             Title="ImputControlsDemo">
+    <VerticalStackLayout>
+        <Grid BackgroundColor="Yellow">
+            <Label VerticalOptions="Center"
+                   HorizontalOptions="Start"  
+                   FontSize="20"
+                   FontAttributes="Bold"
+                       Text="    Selecciona"/>
+            <CheckBox 
+                HorizontalOptions="End"
+                Color="Black"
+                IsChecked="True"/>
+
+        </Grid>
+        <Grid BackgroundColor="Yellow">
+            <Label VerticalOptions="Center"
+                   HorizontalOptions="Start"  
+                   FontSize="20"
+                   FontAttributes="Bold"
+                       Text="    Selecciona"/>
+            <CheckBox 
+                HorizontalOptions="End"
+                Color="Black"
+                IsChecked="True"/>
+
+        </Grid>
+        <Grid BackgroundColor="Yellow">
+            <Label VerticalOptions="Center"
+                   HorizontalOptions="Start"  
+                   FontSize="20"
+                   FontAttributes="Bold"
+                       Text="    Selecciona"/>
+            <CheckBox 
+                HorizontalOptions="End"
+                Color="Black"
+                IsChecked="True"/>
+
+        </Grid>
+
+        <Grid HeightRequest="100"
+              BackgroundColor="Violet">
+            <Slider 
+            x:Name="Slider"
+            Minimum="0"
+            Maximum="10"
+            MaximumTrackColor="Gray"
+            MinimumTrackColor="Black"
+            ThumbColor="Black"
+            ValueChanged="Slider_ValueChanged"/>
+            <Label x:Name="lblSlider"
+                   HorizontalOptions="Center"
+                   VerticalOptions="End"
+               />
+        </Grid>
+
+        <Stepper
+            x:Name="stepper"
+            ValueChanged="stepper_ValueChanged"
+            Maximum="10"
+            Minimum="2"
+            Increment="2"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>
