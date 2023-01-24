@@ -112,7 +112,19 @@
             </Border>
 
             <Image 
-                Source="dotnet_bot.svg"/>
+                Source="dotnet_bot.svg"
+                Aspect="Fill"/>
+            <Frame Margin="5"
+                   BackgroundColor="AliceBlue"
+                   Padding="10">
+                <Image 
+                Source="dotnet_bot.svg"
+                Aspect="Fill"/>
+
+            </Frame>
+
+            <WebView 
+                     Source="https://en.wikipedia.org/wiki/Mexico"/>
 
         </StackLayout>
     </ScrollView>
