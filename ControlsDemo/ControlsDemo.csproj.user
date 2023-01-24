@@ -8,6 +8,9 @@
     <DefaultDevice>pixel_5_-_api_31</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="CommandsControlsDemo.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="PresentationControlsDemo.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
