@@ -9,8 +9,10 @@
                    HorizontalOptions="Start"  
                    FontSize="20"
                    FontAttributes="Bold"
-                       Text="    Selecciona"/>
+                       Text="    OBB"/>
             <CheckBox 
+                x:Name="obbCheck"
+                CheckedChanged="obbCheck_CheckedChanged"
                 HorizontalOptions="End"
                 Color="Black"
                 IsChecked="True"/>
@@ -57,12 +59,28 @@
                />
         </Grid>
 
-        <Stepper
+        <Grid>
+            
+            <Stepper
             x:Name="stepper"
             ValueChanged="stepper_ValueChanged"
-            Maximum="10"
+            Maximum="15"
             Minimum="2"
-            Increment="2"/>
+            Increment="1"/>
+        </Grid>
+        <Grid>
+            <Label VerticalOptions="Center"
+                   HorizontalOptions="Start"  
+                   FontSize="20"
+                   FontAttributes="Bold"
+                       Text="    Selecciona"/>
+            <Switch 
+                
+                WidthRequest="70"
+                IsToggled="true"/>
+        </Grid>
+        
+        
 
 
     </VerticalStackLayout>

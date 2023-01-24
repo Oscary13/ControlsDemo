@@ -19,4 +19,9 @@ public partial class ImputControlsDemo : ContentPage
 			lblSlider.Text = stepper.Value.ToString();
 		}
     }
+
+    private void obbCheck_CheckedChanged(object sender, CheckedChangedEventArgs e)
+    {
+
+    }
 }
