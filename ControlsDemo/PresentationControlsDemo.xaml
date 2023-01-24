@@ -19,7 +19,9 @@
                 StrokeThickness="10"
                 HeightRequest="200"
                 WidthRequest="200"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center">
+
+            </Ellipse>
             <!--Liene: X1,Y2 donde inica X2, Y2-->
             <Line
                 Stroke="Black"
@@ -123,8 +125,24 @@
 
             </Frame>
 
-            <WebView 
-                     Source="https://en.wikipedia.org/wiki/Mexico"/>
+            <!--<WebView 
+                     Source="https://en.wikipedia.org/wiki/Mexico"/>-->
+
+            <WebView Source="https://learn.microsoft.com/xamarin/"
+         VerticalOptions="FillAndExpand" />
+
+            <TableView Intent="Settings">
+                <TableRoot>
+                    <TableSection Title="Selecciona alguno">
+                        <SwitchCell Text="Oscary" />
+                        <SwitchCell Text="OBB"/>
+                        <SwitchCell Text="Oscary" />
+                        <SwitchCell Text="OBB" On="True" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+
+            
 
         </StackLayout>
     </ScrollView>
