@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlsDemo.PresentationControlsDemo"
+             Title="PresentationControlsDemo">
+    <ScrollView>
+        <StackLayout>
+            <BoxView BackgroundColor="Black"
+                 HeightRequest="200"/>
+            <Label 
+                Text="MAUI XD"
+                TextColor="Black"
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalTextAlignment="Center"/>
+            <Ellipse
+                Fill="DarkRed"
+                Stroke="Black"
+                StrokeThickness="10"
+                HeightRequest="200"
+                WidthRequest="200"
+                HorizontalOptions="Center"/>
+            <!--Liene: X1,Y2 donde inica X2, Y2-->
+            <Line
+                Stroke="Black"
+                X1="0"
+                Y1="0"
+                X2="400"
+                Y2="0"
+                StrokeThickness="10"/>
+
+            <Rectangle
+                Fill="DarkGreen"
+                Stroke="Black"
+                StrokeThickness="5"
+                HeightRequest="50"
+                WidthRequest="150"
+                RadiusX="10"
+                RadiusY="10"/>
+
+            <Polygon 
+                Points="40,10 70,80 10,50"
+                Fill="AliceBlue"
+                Stroke="Green"
+                StrokeThickness="5" />
+
+            <Polygon 
+                Points="40,10 70,80 10,50"
+                Fill="AliceBlue"
+                Stroke="Green"
+                StrokeThickness="5"
+                StrokeDashArray="1,1"
+                StrokeDashOffset="6" />
+
+            <Polyline 
+                Points="0,0 10,30 15,0 18,60 23,30 35,30 40,0 43,60 48,30 100,30"
+                Stroke="Red" />
+
+            <Polyline 
+                Points="0,0 10,30 15,0 18,60 23,30 35,30 40,0 43,60 48,30 100,30"
+                Stroke="Red"
+                StrokeThickness="2"
+                StrokeDashArray="1,1"
+                StrokeDashOffset="6" />
+            
+            <Polyline 
+                Points="0 48, 0 144, 96 150, 100 0, 192 0, 192 96, 50 96, 48 192, 150 200 144 48"
+                Fill="Blue"
+                Stroke="Red"
+                StrokeThickness="3" />
+            <Path 
+                Data="M 10,100 L 100,100 100,50Z"
+                Stroke="Black"
+                Aspect="Uniform"
+                HorizontalOptions="Start" />
+
+            <Border Stroke="#C49B33"
+                    StrokeThickness="4"
+                    Background="#2B0B98"
+                    Padding="16,8"
+                    HorizontalOptions="Center">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="40,0,0,40" />
+                </Border.StrokeShape>
+                <Label Text="Oscary Basurto Basurto"
+                       TextColor="White"
+                       FontSize="18"
+                       FontAttributes="Bold" />
+            </Border>
+            <Border 
+                Stroke="Black"
+                StrokeThickness="4"
+                StrokeShape="RoundRectangle 40,0,0,40"
+                Background="DarkRed"
+                Padding="16,8"
+                HorizontalOptions="Center">
+                <Label Text="OBB Crazy LIfe"
+                       TextColor="White"
+                       FontSize="18"
+                       FontAttributes="Bold" />
+            </Border>
+            <Border 
+                Stroke="Black"
+                StrokeThickness="4"
+                Background="DarkRed"
+                Padding="16,8"
+                HorizontalOptions="Center">
+                <Label Text="OBB Crazy LIfe"
+                       TextColor="White"
+                       FontSize="18"
+                       FontAttributes="Bold" />
+            </Border>
+
+            <Image 
+                Source="dotnet_bot.svg"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
