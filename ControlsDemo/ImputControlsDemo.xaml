@@ -3,49 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ControlsDemo.ImputControlsDemo"
              Title="ImputControlsDemo">
-    <VerticalStackLayout>
-        <Grid BackgroundColor="Yellow">
-            <Label VerticalOptions="Center"
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Grid BackgroundColor="Yellow">
+                <Label VerticalOptions="Center"
                    HorizontalOptions="Start"  
                    FontSize="20"
                    FontAttributes="Bold"
                        Text="    OBB"/>
-            <CheckBox 
+                <CheckBox 
                 x:Name="obbCheck"
                 CheckedChanged="obbCheck_CheckedChanged"
                 HorizontalOptions="End"
-                Color="Black"
-                IsChecked="True"/>
+                Color="Black"/>
 
-        </Grid>
-        <Grid BackgroundColor="Yellow">
-            <Label VerticalOptions="Center"
+            </Grid>
+            <Grid BackgroundColor="Yellow">
+                <Label VerticalOptions="Center"
                    HorizontalOptions="Start"  
                    FontSize="20"
                    FontAttributes="Bold"
                        Text="    Selecciona"/>
-            <CheckBox 
+                <CheckBox 
                 HorizontalOptions="End"
                 Color="Black"
                 IsChecked="True"/>
 
-        </Grid>
-        <Grid BackgroundColor="Yellow">
-            <Label VerticalOptions="Center"
+            </Grid>
+            <Grid BackgroundColor="Yellow">
+                <Label VerticalOptions="Center"
                    HorizontalOptions="Start"  
                    FontSize="20"
                    FontAttributes="Bold"
                        Text="    Selecciona"/>
-            <CheckBox 
+                <CheckBox 
                 HorizontalOptions="End"
                 Color="Black"
                 IsChecked="True"/>
 
-        </Grid>
+            </Grid>
 
-        <Grid HeightRequest="100"
+            <Grid HeightRequest="100"
               BackgroundColor="Violet">
-            <Slider 
+                <Slider 
             x:Name="Slider"
             Minimum="0"
             Maximum="10"
@@ -53,35 +54,47 @@
             MinimumTrackColor="Black"
             ThumbColor="Black"
             ValueChanged="Slider_ValueChanged"/>
-            <Label x:Name="lblSlider"
+                <Label x:Name="lblSlider"
                    HorizontalOptions="Center"
                    VerticalOptions="End"
                />
-        </Grid>
+            </Grid>
 
-        <Grid>
-            
-            <Stepper
+            <Grid>
+
+                <Stepper
             x:Name="stepper"
             ValueChanged="stepper_ValueChanged"
             Maximum="15"
             Minimum="2"
             Increment="1"/>
-        </Grid>
-        <Grid>
-            <Label VerticalOptions="Center"
+            </Grid>
+            <Grid>
+                <Label VerticalOptions="Center"
                    HorizontalOptions="Start"  
                    FontSize="20"
                    FontAttributes="Bold"
                        Text="    Selecciona"/>
-            <Switch 
+                <Switch 
                 
                 WidthRequest="70"
                 IsToggled="true"/>
-        </Grid>
-        
-        
+            </Grid>
+            <Border>
+                <Grid HeightRequest="300">
+
+                    <DatePicker VerticalOptions="End"
+                            HorizontalOptions="Center"/>
+                    <TimePicker  HorizontalOptions="Center"/>
+                </Grid>
+            </Border>
+ 
 
 
-    </VerticalStackLayout>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+    
 </ContentPage>

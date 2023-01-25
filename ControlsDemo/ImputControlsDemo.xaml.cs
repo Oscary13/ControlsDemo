@@ -22,6 +22,14 @@ public partial class ImputControlsDemo : ContentPage
 
     private void obbCheck_CheckedChanged(object sender, CheckedChangedEventArgs e)
     {
-
+		if (e.Value == true)
+		{
+            DisplayAlert("JAJAJAJJAJA", "Hola como estas ", " Oky");
+        }
+        else if(e.Value == false)
+        {
+            DisplayAlert("NO", "estas ", " Oky");
+        }
+        
     }
 }
